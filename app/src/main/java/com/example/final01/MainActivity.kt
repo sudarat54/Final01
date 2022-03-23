@@ -1,5 +1,6 @@
 package com.example.final01
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -45,6 +46,11 @@ class MainActivity : AppCompatActivity() {
                 } else if (rdo5.isChecked) {
                     n = (m.toDouble() * 1.9)
                 }
+                val i = Intent(this, MainActivity2 ::class.java)
+                i.putExtra("txt1", txt3.toString())
+                i.putExtra("txt2", m.toInt().toString())
+                i.putExtra("txt3", n.toInt().toString())
+                startActivity(i)
 
 
             }
