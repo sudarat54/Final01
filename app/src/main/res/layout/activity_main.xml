@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D5C9C9"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/Clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#F44336"
+        android:text="Clear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.69"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.939" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TDEE"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.856"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.122" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="51dp"
+        android:layout_height="35dp"
+        android:text="เพศ"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.326" />
+
+    <Button
+        android:id="@+id/Calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#03A9F4"
+        android:text="คำนวน"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.226"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.939" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BMR"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.122" />
+
+    <EditText
+        android:id="@+id/Height"
+        android:layout_width="58dp"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.213"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="365dp"
+        android:layout_height="267dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.76">
+
+        <RadioButton
+            android:id="@+id/rdo1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif-monospace"
+            android:text="ออกกำลังกาย2ครั้งต่ออาทิตย์"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rdo2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif-monospace"
+            android:text="ไม่ออกเลย"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rdo3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif-monospace"
+            android:text="ออกกำลังกาย4วันต่ออาทิตย์"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rdo4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif-monospace"
+            android:text="ออกกำลังกาย6วันต่ออาทิตย์"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rdo5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif-monospace"
+            android:text="ออกกำลังกายทุกวัน"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/Age"
+        android:layout_width="61dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.851"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.211"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/Weight"
+        android:layout_width="60dp"
+        android:layout_height="53dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.212"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <RadioGroup
+        android:id="@+id/RDG"
+        android:layout_width="217dp"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.381"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.361">
+
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="69dp"
+            android:layout_height="48dp"
+            android:text="ชาย"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="142dp"
+            android:layout_height="48dp"
+            android:text="หญิง"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ฺBMI"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.123" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
